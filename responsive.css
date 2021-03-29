@@ -3,6 +3,20 @@
 }
 
 
+.primary-menu input[type="checkbox"]{
+      
+    position: absolute;
+    top: 9px;
+    left: 3px;
+    background: red;
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
 
 @media all and (max-width:1314px) {
 
@@ -450,14 +464,14 @@
     }
 
     .banner-content h2 {
-        font-size: 40px;
+        font-size: 34px;
         margin-bottom: 34px;
     }
 
     .default-btn {
         padding: 13px 22px;
         margin-right: 10px;
-        font-size: 20px;
+        font-size: 17px;
 
     }
 
@@ -560,6 +574,21 @@
         box-shadow: inherit;
    
     }
+
+    .header-menu {
+   
+        position: relative;
+    }
+
+    .header-menu .primary-menu span {
+      
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+    }
+
+    
 }
 
 
@@ -614,6 +643,9 @@
         margin-top: 14px;
       
     }
+
+
+  
 }
 
 
@@ -622,9 +654,31 @@
 @media all and (max-width:532px) {
 
     .default-btn {
-        padding: 13px 4px;
+        padding: 14px 4px;
         display: block;
         margin-top: 15px;
+    }
+
+
+    .header-button {
+        top: 117px;
+    }
+}
+
+
+
+@media all and (max-width:532px){
+    .header-button {
+	top: 70px;
+}
+
+}
+
+
+
+@media all and (max-width:426px) {
+    .header-button {
+        top: 119px;
     }
 }
 
@@ -640,6 +694,9 @@
     .service-box {
         padding: 25px 39px;
     }
+
+
+  
 }
 
 
@@ -713,5 +770,9 @@
 
     .header-btn:hover {
         box-shadow: inherit;
+    }
+
+    .header-button {
+        top: 110px;
     }
 }
